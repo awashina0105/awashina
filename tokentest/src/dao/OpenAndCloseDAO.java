@@ -19,8 +19,6 @@ public class OpenAndCloseDAO {
 		}catch (ClassNotFoundException e) {
 			e.printStackTrace();
 
-		}finally {
-
 		}
 	}
 
