@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Validation-Engine/2.6.4/validationEngine.jquery.min.css" type="text/css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Validation-Engine/2.6.4/jquery-1.8.2.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Validation-Engine/2.6.4/languages/jquery.validationEngine-ja.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Validation-Engine/2.6.4/jquery.validationEngine.min.js" type="text/javascript" charset="utf-8"></script>
+
+<script type="text/javascript">
+jQuery(document).ready(function(){
+   jQuery("#login").validationEngine();
+});
+</script>
+
+
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<!--
+<script type="text/javascript">
+	function passcheck() {
+		if(login.pass.value.length < 8 ){
+			alert("パスワードの桁数が足りません");
+			return false;
+		}else{
+			return true;
+		}
+	}
+</script>
+-->
+<br>　
+<br>　
+
+<form action="" method="post" name="login" id="login">
+<input type="text" name="pass" class="validate[required,minSize[8],custom[onlyLetterNumber]]">
+
+<input type="submit" value="送信"> <!-- onClick="return passcheck();" -->
+</form>
+</body>
+</html>
